@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ButtonComponent from "packages/RButton/button.component";
-import InputComponent from "packages/RInput/input.component";
 import React from "react";
 import LogoComponent from "src/core/shared/logo/logo.component";
 import css from "./login.module.scss";

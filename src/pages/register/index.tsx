@@ -1,5 +1,4 @@
 import ButtonComponent from "packages/RButton/button.component";
-import InputComponent from "packages/RInput/input.component";
 import React,{useEffect, useState} from "react";
 import "reflect-metadata"
 import css from "./register.module.scss";
