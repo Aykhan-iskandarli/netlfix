@@ -1,5 +1,4 @@
 import React, { Component, ComponentProps, useEffect, useRef, useState } from 'react';
-import { DropDownState } from './types/drop-down';
 
 const DropdownComponent = (props: ComponentProps<any>) => {
 
