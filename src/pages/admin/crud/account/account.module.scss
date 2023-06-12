@@ -1,0 +1,10 @@
+@import "../../../../assets/styles/abstracts/";
+
+.account{
+    padding: rem(100) 0;
+    margin: rem(100) 0;
+    height: 100vh;
+    &_card{
+        background-color: $white;
+    }
+}

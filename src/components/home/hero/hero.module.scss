@@ -1,0 +1,59 @@
+@import "../../../assets/styles/abstracts/";
+
+.hero_section {
+  background: $main;
+  background: -webkit-linear-gradient(to right, $main, #f57b77);
+  background: linear-gradient(to right, $main, #f57b77);
+  height: rem(620);
+  z-index: 99;
+  align-items: center;
+  width: 100%;
+  &_container{
+    position: relative;
+    height: 100%;
+    &_shape {
+      position: absolute;
+      bottom: rem(-5);
+      left: 0;
+      right: 0;
+      user-select: none;
+      width: 100%;
+  
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    &_text {
+      position: relative;
+      top: 0;
+      text-align: center;
+      padding-top: rem(140);
+  
+      p {
+        color: $white;
+        font-size: rem(34);
+      }
+    }
+    &_activity{
+    
+      &_count{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+          color: $white;
+          font-size: rem(19);
+        }
+        b{
+          color: $white;
+          font-size: rem(28);
+          letter-spacing: rem(1.2);
+        }
+      }
+    }
+  }
+
+}

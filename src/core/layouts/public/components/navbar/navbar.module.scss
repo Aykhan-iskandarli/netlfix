@@ -1,0 +1,138 @@
+@import "../../../../../assets/styles/abstracts/";
+.navbar_section{
+ 
+   .navbar{
+    height: rem(86);
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+    background: $main;
+    background: -webkit-linear-gradient(to right, $main, #f57b77);
+    background: linear-gradient(to right, $main, #f57b77);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    &_menu{
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: all .3s ease;
+      &_item{
+        color: $white;
+        padding: rem(5) rem(10);
+        &:not(:last-child){
+          margin-right: rem(15);
+        }
+      }
+      &_sub{
+        position: relative;
+        &_icon{
+          background-color: $white;
+          width: rem(23);
+          height: rem(23);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg{
+            font-size: rem(18);
+
+          }
+          cursor: pointer;
+          transition: all .3s ease;
+        }
+        &_list{
+          position: absolute;
+          top: rem(35);
+          left: rem(-20);
+          background-color: $white;
+          width: rem(140);
+          border-radius: rem(6);
+          padding: rem(10);
+          opacity: 1;
+          visibility: visible;
+          transform: scale(100%);
+          transition: all .3s ease;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          a{
+            color: $black;
+            background-color: red !important;
+            li{
+              padding: rem(5) rem(10) rem(5) rem(20) ;
+              font-size: rem(14);
+              margin: rem(15) 0;
+            }
+          }
+          &_item{
+            font-size: rem(12) !important;
+            display: flex;
+            padding: rem(7) 0;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            &:first-child{
+             p{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              background-color: rgb(206, 205, 205);
+              width: 100%;
+              height: rem(1);
+             }
+            }
+       
+            svg{
+              margin-right: rem(6);
+            }
+            &_sub{
+              display: flex;
+              flex-direction: column;
+              span{
+                color: rgb(136, 136, 136);
+                padding-top: rem(4) ;
+              }
+         
+            }
+            svg{
+              position: absolute;
+              right: 0;
+              font-size: rem(18);
+            }
+          }
+        }
+        &_list_auth{
+          width: rem(220) !important;
+          @include breakpoint("1400px", "max") {
+            position: absolute;
+            left: rem(-100);
+        }
+        }
+        &_none{
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0);
+          transition: all .3s ease;
+        }
+
+      }
+      &_select{
+        margin-left: rem(30);
+        background-color: transparent;
+        border: none;
+        font-size: rem(14);
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        color: $white;
+        option{
+          background-color: $main;
+        }
+      }
+    }
+   }
+   .sticky{
+    transition: all .3s ease;
+    box-shadow: 0 0 20px rgb(0 0 0 / 8%);
+  }
+}

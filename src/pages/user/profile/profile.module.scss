@@ -1,0 +1,106 @@
+@import "../../../assets/styles/abstracts/";
+
+.profile {
+    height: 100vh;
+    margin-top: rem(200);
+    &_container {
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        border-radius: rem(6);
+        &_avatar {
+            padding: rem(10);
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            svg {
+                width: rem(100);
+                height: rem(100);
+                border-radius: 50%;
+                color: $main;
+                box-shadow: rgba(19, 0, 0, 0.1) 0px 0px 5px 0px, rgba(255, 16, 16, 0.1) 0px 0px 1px 0px;
+            }
+            &_text {
+                padding-left: rem(10);
+                &_email {
+                    font-size: rem(13);
+                }
+                h4 {
+                    text-align: center;
+                    font-size: rem(15);
+                    margin: 0;
+                }
+                &_email {
+                    font-size: rem(13);
+                    margin: rem(4) 0;
+                    span {
+                        color: $gray-light;
+                    }
+                }
+                &_room_status{
+                    margin: rem(4) 0;
+                    display: flex;
+                    align-items: center;
+                    font-size: rem(16);
+                    span{
+                        font-size: rem(13);
+                        margin-right: rem(5);
+                    }
+                    p{
+                        color: $main;
+                        font-weight: 600;
+                    }
+                }
+            }
+        
+        }
+        &_date {
+            border-top: rem(1) solid rgb(224, 224, 224);
+            padding: rem(10);
+            margin: rem(0) 0 rem(5) rem(0);
+            display: flex;
+            justify-content: space-between;
+            &_startdate {
+                font-size: rem(13);
+                span {
+                    font-weight: 400;
+                    color: $gray-light;
+                }
+            }
+            &_expiredate {
+                font-size: rem(14);
+                span {
+                    font-weight: 600;
+                    color: $main;
+                    margin-right: rem(5);
+                    font-size: rem(13);
+                }
+            }
+        }
+    }
+    &_information{
+        margin-bottom: rem(20);
+        padding: 0 rem(20);
+        &_title{
+            text-align: center;
+            h4{
+                margin: rem(15);
+            }
+        }
+        &_content{
+            border-bottom: rem(1) solid $gray-light;
+            padding: rem(5);
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-weight: 500;
+                color: rgb(156, 155, 155);
+                font-size: rem(13);
+                width: rem(150);
+            }
+            span{
+                font-size: rem(12);
+                font-weight: 400;
+            }
+        }
+    }
+}

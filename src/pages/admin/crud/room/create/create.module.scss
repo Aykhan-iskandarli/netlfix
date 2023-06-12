@@ -1,0 +1,13 @@
+@import "../../../../../assets//styles/abstracts/";
+
+.room_create{
+    height: 100vh;
+    margin-top: rem(100);
+    padding: rem(200) 0;
+    &_btn{
+        margin-top: rem(80);
+        button{
+            width: 100%;
+        }
+    }
+}

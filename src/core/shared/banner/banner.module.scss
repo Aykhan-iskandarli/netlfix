@@ -1,0 +1,27 @@
+@import "../../../assets/styles/abstracts/";
+.banner{
+    position: relative;
+    top: rem(86);
+    background-color:$gray-bg;
+    padding: rem(10);
+    &_container{
+        display: flex;
+        &_prev{
+            p{
+                display: flex;
+                align-items: center;
+                margin-right: rem(5);
+                color: $gray;
+                cursor: pointer;
+                svg{
+                    margin-right: rem(5);
+                }
+            }
+        }
+        a{
+            margin-left: rem(5);
+            color: $gray-txt-dark;
+            font-weight: 600;
+        }
+    }
+}

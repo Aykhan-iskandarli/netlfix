@@ -1,0 +1,16 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.promocode_create{
+    margin: rem(100) 0;
+    padding-top: rem(100);
+    &_card{
+        background-color: $white;
+        padding: rem(20);
+    }
+    &_btn{
+        margin-top: rem(20);
+        button{
+            width: 100%;
+        }
+    }
+}

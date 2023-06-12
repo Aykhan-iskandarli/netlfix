@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: $border-radius;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $border-radius;
+  background-color: crimson;
+
+  height: 40px;
+}
+
+.swal2-title{
+  font-size: rem(22) !important;
+}
+.ant-input{
+  padding: rem(10);
+}
+.ant-picker-input{
+  input{
+    padding: rem(5) !important;
+  }
+}
+#nprogress .bar {
+  background: #29d;
+  position: fixed;
+  height: rem(5) !important;
+}
+.react-paginate {
+&-page {
+    span {
+      font-weight: 400;
+      font-size: rem(13);
+      line-height: rem(15);
+      color: $gray-txt;
+    }
+  }
+  &_pagination__btn {
+    cursor: pointer;
+
+    a {
+      width: rem(32);
+      height: rem(32);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $black;
+      font-size: rem(14);
+    }
+  }
+
+  &_pagination__btn--active {
+    border-radius: 50%;
+    background-color: $pagination-color !important;
+    color: $btn-bg;
+
+    a {
+      color: $btn-bg;
+      font-size: rem(14);
+      line-height: rem(17);
+      font-weight: 400;
+    }
+  }
+}
+
+.modal__dialog--modal_wrapper {
+  background: $white;
+  // box-shadow: $modal-shadow;
+  border-radius: rem(19);
+
+  width: rem(594);
+  height: rem(269);
+  display: flex;
+  align-items: center;
+
+  .modal_title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    margin-top: rem(50);
+  }
+
+  .modal_content {
+    display: flex;
+    border-radius: rem(19);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 rem(76);
+
+    p {
+      font-family: $font-medium;
+      font-weight: 400;
+      font-size: rem(14);
+      line-height: rem(17);
+      color: $blue-txt-dark;
+      text-align: center;
+      margin: rem(18) rem(0) rem(40) rem(0);
+    }
+  }
+
+  .modal_btns {
+    display: flex;
+    justify-content: center;
+
+    button {
+      &:not(:last-child) {
+        margin-right: rem(12);
+      }
+
+      border-radius: rem(19);
+      width: rem(73);
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.ant-table .ant-table-tbody > tr > td {
+  padding-left: rem(30) !important;
+}
+.ant-upload{
+  width: 100%;
+}
+.react-loading-skeleton{
+  background-color: #f8f8f8 !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: rem(350) !important;
+  height: rem(240) !important;
+}

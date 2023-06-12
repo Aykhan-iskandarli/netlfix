@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.account_edit{
+    position: relative;
+    padding: rem(100) 0;
+    margin: rem(100) 0;
+    &_card{
+        background-color: $white !important;
+        padding: rem(20);
+    }
+}

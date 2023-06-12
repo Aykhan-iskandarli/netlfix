@@ -1,0 +1,23 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.brand_edit{
+    margin:rem(100) 0;
+    padding: rem(200) 0;
+    height: 100vh;
+    &_upload{
+        width: 100% !important;
+        input{
+            width: 100% !important;  
+        }
+        button{
+            width: 100%;
+            height: rem(38);
+        }
+    }
+    .btn{
+        margin-top: rem(20);
+        button{
+            width: 100%;
+        }
+    }
+}

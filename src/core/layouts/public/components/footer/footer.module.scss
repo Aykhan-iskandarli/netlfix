@@ -1,0 +1,41 @@
+@import "../../../../../assets/styles/abstracts";
+
+.footer {
+  background-color: $footer-bg;
+  width: 100%;
+  padding: rem(20);
+  position: relative;
+  &_container{
+    height: 100%;
+  
+  }
+  &_payment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    li{
+        width: rem(100);
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+  }
+  &_content{
+    p{
+        text-align: center;
+        color: $white;
+        opacity: 0.3;
+        font-size: rem(14);
+    }
+    &_privacy{
+        text-align: center;
+        margin: rem(10) 0;
+        a{
+            color: $white;
+        }
+    }
+  }
+}

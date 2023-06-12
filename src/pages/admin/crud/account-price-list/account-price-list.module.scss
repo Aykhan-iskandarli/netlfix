@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/abstracts/";
+
+.account_price_list{
+    padding: rem(100) 0;
+    margin: rem(100) 0;
+    height: 100vh;
+    &_card{
+        background-color: $white !important;
+        padding: rem(20);
+    }
+}

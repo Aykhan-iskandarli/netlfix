@@ -1,0 +1,24 @@
+@import "../../../assets/styles/abstracts/";
+
+.feature{
+    position: relative;
+    top: rem(-170);
+    background-color: #fdfafa;
+    padding: rem(50) 0;
+    &_title{
+        text-align: center;
+    }
+    &_list{
+        margin: rem(20) 0;
+        display: flex;
+        &_content{
+            padding-left: rem(40);
+            h3{
+                color: #494949;  
+            }
+            p{
+                color: #636566;
+            }
+        }
+    }
+}

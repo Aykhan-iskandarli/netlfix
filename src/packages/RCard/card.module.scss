@@ -1,0 +1,7 @@
+@import "../../assets/styles/abstracts";
+.card {
+  background-color: transparent;
+  border-radius: $border-radius;
+  border: 0 solid $shadow-color;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154 ,0.20);
+}

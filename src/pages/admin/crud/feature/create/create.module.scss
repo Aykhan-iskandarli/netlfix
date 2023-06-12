@@ -1,0 +1,27 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.feature_create{
+    height: 100vh;
+    margin: rem(100) 0;
+    padding-top: rem(100);
+    &_card{
+        background-color: $white;
+        padding: rem(20);
+    }
+    &_upload{
+        width: 100% !important;
+        input{
+            width: 100% !important;  
+        }
+        button{
+            width: 100%;
+            height: rem(38);
+        }
+    }
+    &_btn{
+        margin-top: rem(20);
+        button{
+            width: 100%;
+        }
+    }
+}

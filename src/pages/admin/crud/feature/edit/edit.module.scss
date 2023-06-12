@@ -1,0 +1,11 @@
+@import "../../../../../assets/styles/abstracts/";
+
+.feature_edit{
+    height: 100vh;
+    padding-top: rem(100);
+    margin-top: rem(200);
+    &_card{
+        background-color: $white;
+        padding: rem(20);
+    }
+}

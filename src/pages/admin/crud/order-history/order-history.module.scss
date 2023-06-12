@@ -1,0 +1,26 @@
+@import "../../../../assets/styles/abstracts/";
+
+.order_history{
+    height: 100vh;
+    margin: rem(100) 0;
+    padding-top: rem(100);
+    &_card{
+        background-color:$white;
+    }
+    &_expired{
+        background-color: $main;
+        color: $white;
+        font-weight: 600;
+        font-size: rem(14);
+        padding: rem(5);
+        border-radius: rem(4);
+    }
+    &_inUsage{
+        background-color: $green;
+        color: $white;
+        font-weight: 600;
+        font-size: rem(14);
+        padding: rem(5);
+        border-radius: rem(4);
+    }
+}
