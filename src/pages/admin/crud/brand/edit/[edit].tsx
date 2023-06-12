@@ -6,7 +6,6 @@ import css from "./edit.module.scss"
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
 import { editBrand, getBrandById } from 'store/brands/store/action';
-import InputComponent from 'packages/RInput/input.component';
 
 const EditBrand = () => {
   const brandById: any = useSelector((state: any) => state.brand && state.brand.brandGetById);
