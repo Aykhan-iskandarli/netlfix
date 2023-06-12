@@ -5,7 +5,6 @@ import { Col, Form, Row, Input, Upload, Button, } from 'antd'
 import ButtonComponent from 'packages/RButton/button.component';
 import { UploadOutlined } from '@ant-design/icons';
 import { createBrand } from 'store/brands/store/action';
-import InputComponent from 'packages/RInput/input.component';
 
 const BrandCreateComponent = () => {
   const [file, setFile] = useState<any>(null);
