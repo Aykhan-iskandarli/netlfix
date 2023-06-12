@@ -27,37 +27,37 @@ const OrderHistoryComponent = () => {
       title: "Start date",
       dataIndex: "createdAt",
       key: "2",
-      render:(item:any)=><span>{item.split("T")[0].split("-").reverse().join(".")}</span>
+      render:(item:any)=><span>{item?.split("T")[0].split("-").reverse().join(".")}</span>
     },
     {
       title: "Expire date",
       dataIndex: "expireDate",
       key: "2",
-      render:(item:any)=><span>{item.split("T")[0].split("-").reverse().join(".")}</span>
+      render:(item:any)=><span>{item?.split("T")[0].split("-").reverse().join(".")}</span>
     },
     {
       title: "Price",
       dataIndex: "priceList",
       key: "3",
-      render:(item:any)=><span>{item.price} $</span>
+      render:(item:any)=><span>{item?.price} $</span>
     },
     {
       title: "Time",
       dataIndex: "priceList",
       key: "4",
-      render:(item:any)=><span>{item.time} day</span>
+      render:(item:any)=><span>{item?.time} day</span>
     },
     {
       title: "Email",
       dataIndex: "user",
       key: "5",
-      render:(item:any)=><span>{item.email}</span>
+      render:(item:any)=><span>{item?.email}</span>
     },
     {
       title: "Name",
       dataIndex: "user",
       key: "6",
-      render:(item:any)=><span>{item.firstName} {item.lastName}</span>
+      render:(item:any)=><span>{item?.firstName} {item.lastName}</span>
     },
     {
       title: "Status",
@@ -76,7 +76,7 @@ const OrderHistoryComponent = () => {
             <h1 className='m-0'>Order history</h1>
           </div>
         </CardComponent>
-        <Table rowKey={rowKey} dataSource={dataSource} columns={columns} pagination={false} />
+        <Table rowKey={rowKey} dataSource={dataSource && dataSource} columns={columns} pagination={false} />
       </div>
     </div>
   )
