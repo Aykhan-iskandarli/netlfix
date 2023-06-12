@@ -22,11 +22,11 @@ i18n
 
   .init({
     fallbackLng: 'az',
-    debug: true,
+    debug: false,
     resources,
 
     interpolation: {
-      escapeValue: true,
+      escapeValue: false,
     }
   });
 
